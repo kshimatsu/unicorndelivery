@@ -1,2 +1,71 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<body>
+
+  <div class="container">
+    <h1>Enjoy your meal time</h1>
+
+      <div class="delivery-time-circle">
+        <div class="delivery-time-text">
+          <p>Get your order at
+          <p><%= @delivery_time.strftime "%l:%m %p" %>
+        </div>
+      </div>
+
+    <div class="intro-and-login">
+
+
+      <div class="col-md-6">
+        <!-- Intro -->
+        <h3>Quick - Curated - Healthy</h3>
+        <p>Your time is valuable,
+        <p>that's why we aim to bring you a special
+        <p>selection of healthy food quickly.
+        <p>Enjoy what really matters in life
+
+        <div class="explore-button"><a class="btn btn-primary btn-lg" role="button">Learn more</a></p></div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="wrapper">
+          <form class="form-signin">
+            <h2 class="form-signin-heading">Sign up or Login</h2>
+            <input type="text" class="form-control" name="username" placeholder="Email Address" required="" autofocus="" />
+            <input type="password" class="form-control" name="password" placeholder="Password" required=""/>
+            <label class="checkbox">
+              <input type="checkbox" value="remember-me" id="rememberMe" name="rememberMe"> Remember me
+            </label>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Photos of food at the bottom  -->
+  <div class="row-of-suggested-food">
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="/assets/burger.jpg" alt="...">
+      </a>
+    </div>
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="/assets/noodles.jpg" alt="...">
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="/assets/takoyaki.jpg" alt="...">
+      </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <a href="#" class="thumbnail">
+        <img src="/assets/wrap.jpg" alt="...">
+      </a>
+    </div>
+
+  </div>
+</body>
