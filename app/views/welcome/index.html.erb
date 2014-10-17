@@ -44,28 +44,41 @@
 
   <!-- Photos of food at the bottom  -->
   <div class="row-of-suggested-food">
+  <h2>We have several yummy options for you to try:</h2>
+<!-- Replace with loop -->
     <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="/assets/burger.jpg" alt="...">
-      </a>
-    </div>
-    <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="/assets/noodles.jpg" alt="...">
-      </a>
-    </div>
-
-    <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="/assets/takoyaki.jpg" alt="...">
-      </a>
+      <h4><%= @item1.name %> <%= @item1.price %></h4>
+      <%= @item1.cuisine %> cuisine from <%= @item1.restaurant_name %>
+      <h5>Harry gives it a <%= @item1.harrys_choice %>
+        <a href="#" class="thumbnail">
+          <%= image_tag @item1.photo_path %>
+        </a>
     </div>
 
     <div class="col-xs-6 col-md-3">
-      <a href="#" class="thumbnail">
-        <img src="/assets/wrap.jpg" alt="...">
-      </a>
+      <h4><%= @item2.name %> <%= @item2.price %></h4>
+      <%= @item2.cuisine %> cuisine from <%= @item2.restaurant_name %>
+        <a href="#" class="thumbnail">
+          <%= image_tag @item2.photo_path %>
+        </a>
     </div>
+
+    <div class="col-xs-6 col-md-3">
+      <h4><%= @item3.name %> <%= @item3.price %></h4>
+      <%= @item3.cuisine %> cuisine from <%= @item3.restaurant_name %>
+        <a href="#" class="thumbnail">
+          <%= image_tag @item3.photo_path %>
+        </a>
+    </div>
+
+    <div class="col-xs-6 col-md-3">
+      <h4><%= @item4.name %> <%= @item4.price %></h4>
+      <%= @item4.cuisine %> cuisine from <%= @item4.restaurant_name %>
+        <a href="#" class="thumbnail">
+          <%= image_tag @item4.photo_path %>
+        </a>
+    </div>
+
 
   </div>
 </body>
