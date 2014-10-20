@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+
 body {
   background: url('bg.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -23,12 +24,23 @@ body {
   position: absolute;
   right: 200px;
   top: 100px;
+
 }
 
 .delivery-time-text {
   margin-top: 50px;
   color: white;
   font-weight: bold;
+}
+
+.get-your-order {
+  font-style: helvetica;
+  font-size: 14px;
+}
+
+.delivery-time {
+  font-size: 24px;
+  font-style: impact;
 }
 .explore-button {
   padding-top: 15px;
@@ -50,10 +62,6 @@ h1 {
 
 }
 
-.delivery-time {
-  background-color: blue;
-  border-radius: 100px;
-}
 .title {
   font-size: 24px;
   background-color: white;

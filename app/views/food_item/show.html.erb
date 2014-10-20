@@ -1,5 +1,27 @@
+<div class="food-description">
 <h1><%= @item.name %></h1>
 <p>It comes from <%= @item.restaurant_name %> at the price of <%= @item.price %></p>
-<p>Harry gives it a <%= @item.harrys_choice %>
+<p>Harry gives it a <%= @item.harrys_choice ? "THUMBS UP" : "THUMBS DOWN" %>
 
 <p><%= image_tag @item.photo_path %>
+
+  <div class="order-amount"
+    <form action="input-quantity">
+      Quantity: <input type="text" name="quantity"><br>
+      Notes: <input type="text" name="notes"><br>
+      <button type="add-to-cart">Add to Cart</button> <button type="order">Order Now</button>
+    </form>
+  </div>
+
+</div>
+
+<div class="jm-item first">
+  <div class="jm-item-wrapper">
+    <div class="jm-item-image">
+      <img src="http://yourdomain.com/images/image1.jpg" alt="Pizza Ristorante" />
+      <span class="jm-item-overlay"> </span>
+      <div class="jm-item-button"><a href="#">View</a></div>
+    </div>
+    <div class="jm-item-title">Pizza Ristorante</div>
+  </div>
+</div>
